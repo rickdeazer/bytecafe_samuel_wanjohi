@@ -1,3 +1,5 @@
+/* PATRICK NGOTHO AND SAMUEL MATHENGE GROUP CONNECTLY */
+
 /* =====================================================================
    The Byte Café – Team stylesheet
    Team members (Driver / Navigator):
@@ -8,7 +10,109 @@
 
 /* ---------- PART 4: Custom properties (colours, radius) ---------- */
 :root {
-  /* e.g. --brown: #6b3e26; */
+ --dark-brown: rgb(123, 46, 15);
+ --normal-brown: rgb(202, 88, 35);
+ --yellowish-brown: rgb(255, 200, 0);
+ --whitish-brown: rgb(255, 226, 214);
+ --normal-white: white;
+ --normal-font: 20px;
+ --smaller-font: 15px;
+ --big-font: 53px; 
+}
+html,body{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+/* HEADER STYLES */
+header {
+  width: 100%;
+  height: 50%;
+  background-color: var(--dark-brown);
+  display: flex;
+  place-content: space-between;
+  align-items: center;
+  align-content: center;
+  padding: 0;
+}
+
+header #top{
+  color: white;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-weight: bold;
+  font-size: 18px;
+  text-decoration: none;
+  outline: none;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+header nav{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-right: 5px;
+}
+header nav ul{
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+
+header nav ul li{
+  font-size: 10px;
+  list-style-type:none;
+  font-size: small;
+}
+header nav ul li a{
+  color: white;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+
+/* HERO SECTION */
+.hero {
+  background-color: var(--normal-brown);
+  height: 350px ;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+}
+.hero h1{
+  font-size: var(--big-font);
+  text-align: center;
+  margin: 0;
+  color: white;
+}
+
+.hero p{
+  color:  white;
+  font-size: var(--smaller-font);
+  text-align: center;
+  line-height: 30px;
+  font-family: Arial, Helvetica, sans-serif;
+  letter-spacing: 0.8px;
+  font-weight: 600;
+}
+.hero a{
+  text-align: center;
+  color: var(--dark-brown);
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-weight: bold;
+  justify-self: center;
+  background-color: var(--yellowish-brown);
+  display: inline;
+  width: fit-content;
+  align-self: center;
+  padding: 10px 15px;
+  border-radius: 7px;
+  text-decoration: none;
+  font-size: var(--smaller-font);
 }
 
 /* ---------- PART 5: Box model reset ---------- */
